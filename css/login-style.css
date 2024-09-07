@@ -12,20 +12,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Navbar avatar styling */
-.navbar .dropdown-toggle img {
-    border: 2px solid #ddd;
-}
-
-/* Navbar icons for mobile */
-.nav-link i {
-    font-size: 1.5em;
-}
-
-/* Mobile navbar text */
-.nav-link {
-    font-size: 0.75em;
-}
 input{
     border-radius: 40px !important;
     background: #FFF !important;

@@ -2,7 +2,20 @@
 .navbar {
     background-color: #f8f9fa;
 }
+/* Navbar avatar styling */
+.navbar .dropdown-toggle img {
+    border: 2px solid #ddd;
+}
 
+/* Navbar icons for mobile */
+.nav-link i {
+    font-size: 1.5em;
+}
+
+/* Mobile navbar text */
+.nav-link {
+    font-size: 0.75em;
+}
 
 /* Styling for the mobile bottom navbar */
 .navbar.fixed-bottom .nav-link {
@@ -36,4 +49,11 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+/* Ensure button is aligned to the right */
+.d-flex {
+    display: flex;
+}
 
+.justify-content-end {
+    justify-content: flex-end;
+}
