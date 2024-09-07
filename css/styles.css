@@ -1,59 +1,63 @@
-/* Navbar styles for both desktop and mobile */
+/* Gradient background for desktop and mobile navbar */
 .navbar {
-    background-color: #f8f9fa;
-}
-/* Navbar avatar styling */
-.navbar .dropdown-toggle img {
-    border: 2px solid #ddd;
+    background: linear-gradient(to right, #add8e6, #007bff);
+    color: white;
 }
 
-/* Navbar icons for mobile */
-.nav-link i {
-    font-size: 1.5em;
+/* Ensure the text color is appropriate for the gradient background */
+.navbar .nav-link {
+    color: white !important;
 }
 
-/* Mobile navbar text */
-.nav-link {
-    font-size: 0.75em;
+.navbar .nav-link:hover {
+    color: #f0f0f0 !important;
 }
 
-/* Styling for the mobile bottom navbar */
-.navbar.fixed-bottom .nav-link {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+/* Gradient background for the mobile navbar */
+.navbar.fixed-bottom {
+    background: linear-gradient(to right, #add8e6, #007bff);
 }
 
-/* Hides the top navbar on mobile */
-.navbar.d-lg-flex {
-    display: none !important;
+/* Limit content width and center */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Shows bottom navbar only on small screens */
-@media (max-width: 991px) {
-    .navbar.fixed-bottom {
-        display: flex;
+/* Add some spacing to the loan cards */
+.loan-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.loan-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Improve the loan info layout */
+.loan-info p {
+    margin-bottom: 5px;
+}
+
+/* Make the book images a bit larger and styled */
+.book-card img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust mobile responsiveness */
+@media (max-width: 576px) {
+    .loan-card {
+        flex-direction: column;
+        text-align: center;
     }
-}
-
-/* For larger screens, show the top navbar */
-@media (min-width: 992px) {
-    .navbar.d-lg-flex {
-        display: flex !important;
+    .loan-info {
+        margin-top: 10px;
     }
-    .navbar.fixed-bottom {
-        display: none;
-    }
-}
-/* Apply Lato font globally */
-body {
-    font-family: 'Lato', sans-serif;
-}
-/* Ensure button is aligned to the right */
-.d-flex {
-    display: flex;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
 }
