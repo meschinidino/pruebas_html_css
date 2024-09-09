@@ -21,6 +21,25 @@
 
 
 <body>
+<!-- Mobile Navbar (Top) with Logo in the Center, Back Arrow, and Avatar -->
+<nav class="navbar navbar-light bg-light fixed-top d-flex d-lg-none">
+    <div class="container-fluid justify-content-between align-items-center">
+        <!-- Back Arrow Placeholder -->
+        <a href="index.html" class="navbar-icon">
+            <img src="images/back-arrow.png" alt="Back" width="24" height="24">
+        </a>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand mx-auto" href="index.html">
+            <img src="images/logo.png" alt="Library" width="30" height="30" class="d-inline-block align-text-top">
+        </a>
+
+        <!-- Placeholder Avatar Icon -->
+        <a href="#" class="navbar-icon">
+            <img src="images/user-avatar.png" alt="Avatar" width="30" height="30" class="rounded-circle">
+        </a>
+    </div>
+</nav>
 
 <!-- Desktop Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-flex">
@@ -36,13 +55,14 @@
                 <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
             </ul>
             <ul class="navbar-nav ms-auto">
+                <!-- Profile Avatar for Desktop -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="user-avatar.png" alt="User Avatar" width="30" height="30" class="rounded-circle">
+                        <img src="images/user-avatar.png" alt="User Avatar" width="30" height="30" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
                         <li><a class="dropdown-item" href="user-settings.html">User Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -127,6 +147,7 @@
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
