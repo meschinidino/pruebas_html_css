@@ -48,3 +48,23 @@
 #bookGallery {
     margin-top: 20px;
 }
+/* Book image styling */
+.book-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Book card styling */
+.book-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Remove any unwanted borders */
+    overflow: hidden;
+}
+
+/* Book card hover effect */
+.book-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Makes the card pop up and slightly enlarge */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to give it depth */
+}
